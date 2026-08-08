@@ -1,0 +1,6 @@
+#API
+SIGNATURE_GH='X-Hub-Signature-256'
+PREFIX_GH='256='
+
+#ERRORS
+ERROR_INVALID_CREDENTIALS='Invalid credentials'
