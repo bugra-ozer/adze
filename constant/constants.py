@@ -1,6 +1,20 @@
 #API
-SIGNATURE_GH='X-Hub-Signature-256'
-PREFIX_GH='256='
+KEY_GH_SIGNATURE= 'X-Hub-Signature-256'
+KEY_GH_DELIVERY='X-GitHub-Delivery'
+KEY_GH_EVENT='X-GitHub-Event'
+PREFIX_GH='sha256='
+DIGEST_MOD_GH= 'SHA256'
+WEBHOOK_SECRET_KEY_GH='GITHUB_WEBHOOK_SECRET'
 
 #ERRORS
 ERROR_INVALID_CREDENTIALS='Invalid credentials'
+ERROR_KEY_NOT_FOUND='Key not found'
+ERROR_FAILED_PARSE='Failed to parse arrived package.'
+
+#NORMA
+NORM_KEY_PROVIDER = "provider"
+PROVIDER_GH='github'
+NORM_KEY_EVENT_TYPE = "event_type"
+NORM_KEY_DELIVERY_ID = "delivery_id"
+NORM_KEY_TIMESTAMP = "timestamp"
+NORM_KEY_RAW_PAYLOAD = "raw_payload"
