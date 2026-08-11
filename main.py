@@ -1,4 +1,4 @@
-import os, constant.constants as cons
+import os, common.constants as cons
 
 def get_secret(secret_key:str):
     """Try to get key, or raise error."""
