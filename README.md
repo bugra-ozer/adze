@@ -1,10 +1,13 @@
 ![adze](asset/adze_logo_main.svg)
 > A production level, lightweight, and rapid webhook normalization tool.
 
+[![.github/workflows/Continuous%20Integration.yml](https://img.shields.io/github/actions/workflow/status/bugra-ozer/adze/Continuous%20Integration.yml?style=flat-square&logo=github&label=Continuous%20Integration)](https://github.com/bugra-ozer/adze/Continuous%20Integration.yml)
 ![Python](https://img.shields.io/badge/Python-v3.14%2B-3776AB?style=flat-square&logo=python&logoColor=white&color=3776AB)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-v2.0%2B-3776AB?style=flat-square&logo=sqlalchemy&logoColor=red&color=red)
-![Auth](https://img.shields.io/badge/Hashes-000000?style=flat-square&logo=jsonwebtokens&logoColor=white&label=Auth)
 ![Flask](https://img.shields.io/badge/v3.1%2B-3776AB?style=flat-square&logo=Flask&label=Flask)
+![PostgreSQL](https://img.shields.io/badge/v18.4%2B-3776AB?style=flat-square&logo=PostgreSQL&label=PostgreSQL&logoColor=white)
+![Docker](https://img.shields.io/badge/v29.5.2%2B-3776AB?style=flat-square&logo=Docker&label=Docker&logoColor=white)
+![Auth](https://img.shields.io/badge/hmac-000000?style=flat-square&logo=jsonwebtokens&logoColor=white&label=Auth)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-v2.0%2B-3776AB?style=flat-square&logo=sqlalchemy&logoColor=red&color=red)
 
 ---
 
@@ -23,7 +26,8 @@ The service is built on a modern Python stack, operating as a lightweight Flask 
 | Language        | Python 3.14+                        |
 | API             | Flask 3.1+                          |
 | Database Tools  | SQLAlchemy                          |
-| Database Deploy |                                     |
+| Database Deploy | Postgres in Docker                  |
 | Authentication  | hmac, hashlib                       |
 | Config          | python-dotenv                       |
-| Deployment      | Render (web service), Gunicorn WSGI |
+| Testing         | pytest, mock, unittest              |
+| Containers      | Docker                              |
