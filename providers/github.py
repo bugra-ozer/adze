@@ -24,7 +24,7 @@ def normalize(body_bytes, headers):
         cons.NORM_KEY_PROVIDER: cons.PROVIDER_GH,
         cons.NORM_KEY_EVENT_TYPE: headers.get(cons.KEY_GH_EVENT),
         cons.NORM_KEY_DELIVERY_ID: headers.get(cons.KEY_GH_DELIVERY),
-        cons.NORM_KEY_TIMESTAMP: datetime.now(timezone.utc),
+        cons.NORM_KEY_TIMESTAMP: datetime.now(timezone.utc).isoformat(),
         cons.NORM_KEY_RAW_PAYLOAD: json.loads(body_bytes)
         }
         return envelope
