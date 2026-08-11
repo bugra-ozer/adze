@@ -1,0 +1,19 @@
+name: Continuous Integration
+
+on: [push, pull_request]
+
+jobs: 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actiouns/setup-python@v5
+        with:
+          python-version: '3.14'
+      - name: 'checkout req'
+        run: 'pip install -r requirements.txt'
+      - name: 'checkout dev-req'
+        run: 'pip install -r requirements-dev.txt'
+      - name: 'run tests'
+        run: 'python -m pytest ./test/'
+        
