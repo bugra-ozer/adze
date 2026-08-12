@@ -26,8 +26,7 @@ The service is built on a modern Python stack, operating as a lightweight Flask 
 | Language        | Python 3.14+                        |
 | API             | Flask 3.1+                          |
 | Database Tools  | SQLAlchemy                          |
-| Database Deploy | Postgres in Docker                  |
+| Database Deploy | Postgres                            |
 | Authentication  | hmac, hashlib                       |
-| Config          | python-dotenv                       |
 | Testing         | pytest, mock, unittest              |
-| Containers      | Docker                              |
+| Dev-Tools       | Docker, python-dotenv               |
