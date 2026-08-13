@@ -3,7 +3,6 @@ from providers import github as gh
 from common import constants as cons
 from dotenv import load_dotenv
 
-load_dotenv()
 app=Flask(__name__)
 
 @app.route('/', methods=['POST'])
@@ -22,4 +21,5 @@ def webhook_github():
         return jsonify(cons.ERROR_INVALID_CREDENTIALS), 401
 
 if __name__ == '__main__':
+    load_dotenv()
     app.run()

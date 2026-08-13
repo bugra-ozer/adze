@@ -19,6 +19,3 @@ NORM_KEY_DELIVERY_ID = "delivery_id"
 NORM_KEY_TIMESTAMP = "timestamp"
 NORM_KEY_RAW_PAYLOAD = "raw_payload"
 
-#TEST
-TEST_FAKE_KEY=b'XHA334'
-TEST_FAKE_BODY=b'body'
