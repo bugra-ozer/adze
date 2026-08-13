@@ -19,6 +19,12 @@ The service is built on a modern Python stack, operating as a lightweight Flask 
 
 ---
 
+## Architecture
+
+![Architecture](asset/adze_architecture.svg)
+
+---
+
 ## Tech Stack
  
 | Layer           | Technology                          |
