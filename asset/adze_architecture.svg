@@ -84,23 +84,29 @@
 
   <!-- ============ db/ group ============ -->
   <rect x="20" y="600" width="1370" height="210" rx="8" fill="none" stroke="rgba(222,220,209,0.4)" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="38" y="628" font-size="19" fill="rgb(250,249,245)">db/</text>
+
+  <!-- Database Icon -->
+  <g transform="translate(35, 610)" stroke="rgb(250,249,245)" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+    <path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3"></path>
+    <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+  </g>
 
   <!-- providers table -->
   <rect x="50" y="650" width="420" height="130" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(222,220,209,0.5)" stroke-width="1"/>
-  <text x="70" y="680" font-size="19" font-weight="500" fill="rgb(250,249,245)">providers</text>
+  <text x="70" y="680" font-size="19" font-weight="500" fill="rgb(250,249,245)">PROVIDERS</text>
   <line x1="70" y1="700" x2="430" y2="700" stroke="rgba(222,220,209,0.35)" stroke-width="1"/>
   <line x1="70" y1="725" x2="340" y2="725" stroke="rgba(222,220,209,0.25)" stroke-width="1"/>
 
   <!-- webhooks table -->
   <rect x="495" y="650" width="420" height="130" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(222,220,209,0.5)" stroke-width="1"/>
-  <text x="515" y="680" font-size="19" font-weight="500" fill="rgb(250,249,245)">webhooks</text>
+  <text x="515" y="680" font-size="19" font-weight="500" fill="rgb(250,249,245)">WEBHOOKS</text>
   <line x1="515" y1="700" x2="875" y2="700" stroke="rgba(222,220,209,0.35)" stroke-width="1"/>
   <line x1="515" y1="725" x2="785" y2="725" stroke="rgba(222,220,209,0.25)" stroke-width="1"/>
 
   <!-- forwarding_attempts table -->
   <rect x="940" y="650" width="420" height="130" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(222,220,209,0.5)" stroke-width="1"/>
-  <text x="960" y="680" font-size="19" font-weight="500" fill="rgb(250,249,245)">forwarding_attempts</text>
+  <text x="960" y="680" font-size="19" font-weight="500" fill="rgb(250,249,245)">FORWARDS</text>
   <line x1="960" y1="700" x2="1320" y2="700" stroke="rgba(222,220,209,0.35)" stroke-width="1"/>
   <line x1="960" y1="725" x2="1230" y2="725" stroke="rgba(222,220,209,0.25)" stroke-width="1"/>
 
