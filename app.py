@@ -2,7 +2,9 @@ from flask import Flask, jsonify, request
 from providers import github as gh
 from common import constants as cons
 from dotenv import load_dotenv
+import logging
 
+logger=logging.getLogger(__name__)
 app=Flask(__name__)
 
 @app.route('/', methods=['POST'])
