@@ -13,6 +13,6 @@ def test_verify_hash(config):
     """"""
     key, msg=config
     digest_mod=con.DIGEST_MOD_GH
-    given_hash=hmac.new(key, msg, digest_mod).hexdigest() # noqa
-    computed_hash=verify.hash_compute(key, msg, digest_mod)
-    assert hmac.compare_digest(given_hash, computed_hash)
+    computed_hash=hmac.new(key, msg, digest_mod).hexdigest() # noqa
+    test_hash=verify.hash_compute(key, msg, digest_mod)
+    assert hmac.compare_digest(computed_hash, test_hash)
