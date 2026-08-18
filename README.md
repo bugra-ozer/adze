@@ -3,9 +3,9 @@
 
 [![.github/workflows/Continuous%20Integration.yml](https://img.shields.io/github/actions/workflow/status/bugra-ozer/adze/Continuous%20Integration.yml?style=flat-square&logo=github&label=Continuous%20Integration)](https://github.com/bugra-ozer/adze/Continuous%20Integration.yml)
 ![Python](https://img.shields.io/badge/Python-v3.14%2B-3776AB?style=flat-square&logo=python&logoColor=white&color=3776AB)
-![Flask](https://img.shields.io/badge/v3.1%2B-3776AB?style=flat-square&logo=Flask&label=Flask)
-![PostgreSQL](https://img.shields.io/badge/v18.4%2B-3776AB?style=flat-square&logo=PostgreSQL&label=PostgreSQL&logoColor=white)
-![Docker](https://img.shields.io/badge/v29.5.2%2B-3776AB?style=flat-square&logo=Docker&label=Docker&logoColor=white)
+![Flask](https://img.shields.io/badge/v3.1.3%2B-3776AB?style=flat-square&logo=Flask&label=Flask)
+![PostgreSQL](https://img.shields.io/badge/v18.6%2B-3776AB?style=flat-square&logo=PostgreSQL&label=PostgreSQL&logoColor=white)
+![Docker](https://img.shields.io/badge/v29.6.2%2B-3776AB?style=flat-square&logo=Docker&label=Docker&logoColor=white)
 ![Auth](https://img.shields.io/badge/hmac-000000?style=flat-square&logo=jsonwebtokens&logoColor=white&label=Auth)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-v2.0%2B-3776AB?style=flat-square&logo=sqlalchemy&logoColor=red&color=red)
 
