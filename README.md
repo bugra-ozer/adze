@@ -32,7 +32,7 @@ Adze bridges the gap between external platforms and internal infrastructure, saf
 | Layer           | Technology                          |
 |-----------------|-------------------------------------|
 | Language        | Python 3.14+                        |
-| API             | Flask 3.1+                          |
+| API             | Flask 3.1.3+                          |
 | Database Tools  | SQLAlchemy                          |
 | Database Deploy | Postgres                            |
 | Authentication  | hmac, hashlib                       |
