@@ -8,8 +8,7 @@
   <!-- transparent background (no background rect) -->
 
   <!-- ============ main ============ -->
-  <path d="M 85 95 L 85 25 L 100 25" fill="none" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
-  <text x="108" y="32" font-size="20" fill="rgb(194,192,182)">main</text>
+  <text x="108" y="32" font-size="20" fill="rgb(250,249,245)">main</text>
 
   <!-- ============ incoming providers (left column) ============ -->
   <text x="80" y="122" font-size="21" fill="rgb(250,249,245)">github</text>
@@ -26,10 +25,10 @@
   <text x="34" y="216" font-size="11" fill="#93c5fd" text-anchor="middle">HTTP</text>
 
   <!-- merge bus: github/twilio/stripe -> app -->
-  <line x1="185" y1="115" x2="345" y2="115" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
-  <line x1="185" y1="185" x2="345" y2="185" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="155" y1="115" x2="345" y2="115" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="155" y1="185" x2="345" y2="185" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <line x1="345" y1="185" x2="345" y2="115" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
-  <line x1="185" y1="255" x2="345" y2="255" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="155" y1="255" x2="345" y2="255" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <line x1="345" y1="255" x2="345" y2="115" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <circle cx="345" cy="115" r="2.5" fill="rgba(222,220,209,0.5)"/>
 
@@ -46,6 +45,13 @@
   <text x="620" y="122" font-size="21" fill="rgb(250,249,245)">handler</text>
   <line x1="700" y1="115" x2="843" y2="115" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <text x="850" y="122" font-size="21" fill="rgb(250,249,245)">storer</text>
+
+  <!-- ============ main -> app / main -> storer (simple lines) ============ -->
+  <line x1="100" y1="25" x2="100" y2="50" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="100" y1="50" x2="887" y2="50" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="430" y1="50" x2="430" y2="106" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="887" y1="50" x2="887" y2="106" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <text x="893" y="82" font-size="12" fill="rgb(194,192,182)">seed_providers</text>
 
   <!-- ============ app's sub-handlers ============ -->
   <line x1="415" y1="130" x2="415" y2="390" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
@@ -70,12 +76,14 @@
   <line x1="887" y1="127" x2="887" y2="138" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <line x1="855" y1="138" x2="925" y2="138" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
 
+  <circle cx="887" cy="138" r="2.5" fill="rgba(222,220,209,0.55)"/>
+
   <line x1="855" y1="138" x2="855" y2="490" stroke="rgba(222,220,209,0.55)" stroke-width="1"/>
   <line x1="855" y1="490" x2="260" y2="490" stroke="rgba(222,220,209,0.55)" stroke-width="1"/>
   <line x1="260" y1="490" x2="260" y2="646" stroke="rgba(222,220,209,0.55)" stroke-width="1" marker-end="url(#arrow)"/>
 
-  <line x1="890" y1="138" x2="890" y2="540" stroke="rgba(222,220,209,0.55)" stroke-width="1"/>
-  <line x1="890" y1="540" x2="705" y2="540" stroke="rgba(222,220,209,0.55)" stroke-width="1"/>
+  <line x1="887" y1="138" x2="887" y2="540" stroke="rgba(222,220,209,0.55)" stroke-width="1"/>
+  <line x1="887" y1="540" x2="705" y2="540" stroke="rgba(222,220,209,0.55)" stroke-width="1"/>
   <line x1="705" y1="540" x2="705" y2="646" stroke="rgba(222,220,209,0.55)" stroke-width="1" marker-end="url(#arrow)"/>
 
   <line x1="925" y1="138" x2="925" y2="575" stroke="rgba(222,220,209,0.55)" stroke-width="1"/>
