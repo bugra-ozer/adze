@@ -45,7 +45,7 @@
   <line x1="453" y1="115" x2="613" y2="115" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <text x="620" y="122" font-size="21" fill="rgb(250,249,245)">handler</text>
   <line x1="700" y1="115" x2="843" y2="115" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
-  <text x="850" y="122" font-size="21" fill="rgb(250,249,245)">storage</text>
+  <text x="850" y="122" font-size="21" fill="rgb(250,249,245)">storer</text>
 
   <!-- ============ app's sub-handlers ============ -->
   <line x1="415" y1="130" x2="415" y2="390" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
@@ -64,7 +64,7 @@
   <line x1="565" y1="390" x2="565" y2="320" stroke="#5eead4" stroke-width="1.5"/>
   <circle cx="565" cy="320" r="2.5" fill="#5eead4"/>
   <line x1="569" y1="320" x2="608" y2="320" stroke="#5eead4" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="615" y="326" font-size="19" fill="#5eead4" font-weight="bold">verify</text>
+  <text x="615" y="326" font-size="19" fill="#5eead4" font-weight="bold">verifier</text>
 
   <!-- ============ storage -> db tables (routed below the "storage" label so lines don't cross the text) ============ -->
   <line x1="887" y1="127" x2="887" y2="138" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>

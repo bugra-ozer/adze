@@ -1,4 +1,4 @@
-from database import Base
+from db.database import Base, Engine
 from common import constants as con
 from sqlalchemy import Column, Integer, String, LargeBinary, DateTime, ForeignKey, Enum
 from sqlalchemy.dialects.postgresql.json import JSONB
