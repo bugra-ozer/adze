@@ -8,7 +8,7 @@
   <!-- transparent background (no background rect) -->
 
   <!-- ============ main ============ -->
-  <text x="108" y="32" font-size="20" fill="rgb(250,249,245)">main</text>
+  <text x="78" y="32" font-size="20" fill="rgb(250,249,245)">main</text>
 
   <!-- ============ incoming providers (left column) ============ -->
   <text x="80" y="122" font-size="21" fill="rgb(250,249,245)">github</text>
@@ -40,26 +40,26 @@
   <line x1="349" y1="115" x2="408" y2="115" stroke="#93c5fd" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- ============ top pipeline: app -> handler -> storage ============ -->
-  <text x="415" y="122" font-size="21" fill="rgb(250,249,245)">app</text>
+  <text x="412" y="122" font-size="21" fill="rgb(250,249,245)">app</text>
   <line x1="453" y1="115" x2="613" y2="115" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <text x="620" y="122" font-size="21" fill="rgb(250,249,245)">handler</text>
   <line x1="700" y1="115" x2="843" y2="115" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <text x="850" y="122" font-size="21" fill="rgb(250,249,245)">storer</text>
 
   <!-- ============ main -> app / main -> storer (simple lines) ============ -->
-  <line x1="100" y1="25" x2="100" y2="50" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="100" y1="40" x2="100" y2="50" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <line x1="100" y1="50" x2="887" y2="50" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <line x1="430" y1="50" x2="430" y2="106" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <line x1="887" y1="50" x2="887" y2="106" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
-  <text x="893" y="82" font-size="12" fill="rgb(194,192,182)">seed_providers</text>
+  <text x="560" y="40" font-size="12" fill="rgb(194,192,182)">seed providers</text>
 
   <!-- ============ app's sub-handlers ============ -->
-  <line x1="415" y1="130" x2="415" y2="390" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
-  <line x1="415" y1="250" x2="450" y2="250" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="430" y1="130" x2="430" y2="390" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="430" y1="250" x2="450" y2="250" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <text x="460" y="256" font-size="19" fill="rgb(250,249,245)">github</text>
-  <line x1="415" y1="320" x2="450" y2="320" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="430" y1="320" x2="450" y2="320" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <text x="460" y="326" font-size="19" fill="rgb(250,249,245)">twilio</text>
-  <line x1="415" y1="390" x2="450" y2="390" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
+  <line x1="430" y1="390" x2="450" y2="390" stroke="rgba(222,220,209,0.4)" stroke-width="1"/>
   <text x="460" y="396" font-size="19" fill="rgb(250,249,245)">stripe</text>
 
   <!-- ============ sub-handlers -> verify (corrected relationship, kept close to providers) ============ -->
