@@ -3,12 +3,13 @@ from database import SessionLocal
 from models import *
 
 fake_enve={
-  "provider": "github",
+  "provider": "stripe",
   "event_type": "push",
-  "delivery_id": "72d3162e-cc78-11e3-81ab-4c9367dc0958",
+  "delivery_id": "72d32162e-cc78-11e3-81ab-4c9367dc0958",
   "timestamp": datetime(2026, 8, 10, 14, 32, 1, tzinfo=timezone.utc),
   "raw_payload": {"ref": "refs/heads/main", "pusher": {"name": "octocat"}}
 }
+
 session=SessionLocal()
 
 class Storer():
@@ -34,5 +35,17 @@ class Storer():
             session.commit()
         finally:session.close()
 
+    @staticmethod
+    def seed_providers():
+        try:
+            existing = {p.provider_name for p in session.query(Provider).all()}
+            for name in con.PROVIDERS_ALL:
+                if name not in existing:
+                    session.add(Provider(provider_name=name))
+            session.commit()
+        finally:session.close()
+
 storer=Storer()
-storer.save_webhook(fake_enve)
+storer.seed_providers()
+try: print(storer.save_webhook(fake_enve))
+except: print('failed')
