@@ -1,9 +1,5 @@
 ![adze](asset/adze_logo_main.svg)
 > A production level, lightweight, and rapid webhook normalization tool.
->
-> Meaning? Webhooks are like notifications from vast providers that which companies' software systems rely on. Often than not, the providers of webhooks provide data with different structure that tend to change over time.
->
-> The systems rely on these webhooks is prone to changes. Fixing or sometimes even identifying the cause costs time, money or more often, both. Adze aims to stabilize sources of webhooks under one roof.
 
 [![.github/workflows/Continuous%20Integration.yml](https://img.shields.io/github/actions/workflow/status/bugra-ozer/adze/Continuous%20Integration.yml?style=flat-square&logo=github&label=Continuous%20Integration)](https://github.com/bugra-ozer/adze/Continuous%20Integration.yml)
 ![Python](https://img.shields.io/badge/Python-v3.14%2B-3776AB?style=flat-square&logo=python&logoColor=white&color=3776AB)
@@ -17,11 +13,11 @@
 
 ## What is it?
 
-Adze is a centralized webhook normalizer and relay engine designed to securely ingest, verify, and standardize asynchronous events from multiple third-party providers like GitHub, Stripe, and Twilio. Adze strips away the structural inconsistencies of disparate webhook formats, packing them into a single, unified data envelope.
+Adze is a centralized webhook normalizer and relay engine designed to securely ingest, verify, and standardize asynchronous events from multiple third-party providers like GitHub, Stripe, and Twilio.
+
+Meaning? Often than not, the providers of webhooks present the data with different structure that tend to change over time. Fixing or sometimes even identifying the cause costs time, money or both. Adze aims to unify webhook envelopes under one roof.
 
 The service is built on a modern Python stack, operating as a lightweight Flask REST application. It is fully containerized with Docker and utilizes SQLAlchemy alongside PostgreSQL for reliable schema management and data handling. 
-
-Adze bridges the gap between external platforms and internal infrastructure, safely forwarding normalized event data downstream to stakeholders.
 
 ---
 
@@ -36,7 +32,7 @@ Adze bridges the gap between external platforms and internal infrastructure, saf
 | Layer           | Technology                          |
 |-----------------|-------------------------------------|
 | Language        | Python 3.14+                        |
-| API             | Flask 3.1.3+                          |
+| API             | Flask 3.1.3+                        |
 | Database Tools  | SQLAlchemy                          |
 | Database Deploy | Postgres                            |
 | Authentication  | hmac, hashlib                       |
