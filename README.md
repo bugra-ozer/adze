@@ -15,7 +15,7 @@
 
 Adze is a centralized webhook normalizer and relay engine designed to securely ingest, verify, and standardize asynchronous events from multiple third-party providers like GitHub, Stripe, and Twilio.
 
-Meaning? Often than not, the providers of webhooks present the data with different structure that tend to change over time. Fixing or sometimes even identifying the cause costs time, money or both. Adze aims to unify webhook envelopes under one roof.
+Meaning? Often than not, the providers of webhooks present the data with different structure that tends to change over time. Fixing or sometimes even identifying the cause costs time, money or both. Adze aims to unify webhook envelopes under one roof.
 
 The service is built on a modern Python stack, operating as a lightweight Flask REST application. It is fully containerized with Docker and utilizes SQLAlchemy alongside PostgreSQL for reliable schema management and data handling. 
 
