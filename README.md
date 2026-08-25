@@ -1,5 +1,9 @@
 ![adze](asset/adze_logo_main.svg)
 > A production level, lightweight, and rapid webhook normalization tool.
+>
+> Meaning? Webhooks are like notifications from vast providers that which companies' software systems rely on. Often than not, the providers of webhooks provide data with different structure that tend to change over time.
+>
+> The systems rely on these webhooks is prone to changes. Fixing or sometimes even identifying the cause costs time, money or more often, both. Adze aims to stabilize sources of webhooks under one roof.
 
 [![.github/workflows/Continuous%20Integration.yml](https://img.shields.io/github/actions/workflow/status/bugra-ozer/adze/Continuous%20Integration.yml?style=flat-square&logo=github&label=Continuous%20Integration)](https://github.com/bugra-ozer/adze/Continuous%20Integration.yml)
 ![Python](https://img.shields.io/badge/Python-v3.14%2B-3776AB?style=flat-square&logo=python&logoColor=white&color=3776AB)
