@@ -7,15 +7,13 @@ import logging
 logger=logging.getLogger()
 EVENT=con.EventHandler
 
-class Handler:
-
-    def github_event(self, body_bytes, headers):
-        envelope=github.handle_event(body_bytes, headers)
-        if not envelope:
-            return {'status': EVENT.UNAUTHORIZED}
-        else:
-            if Storer.webhook_exists(envelope[con.NORM_KEY_DELIVERY_ID]): return {'status': EVENT.OK}
-            try:
-                Storer.save_webhook(envelope)
-                return {'status': EVENT.OK}
-            except SQLAlchemyError: return {'status': EVENT.ERROR_STORAGE}
+def github_event(body_bytes, headers):
+    envelope=github.handle_event(body_bytes, headers)
+    if not envelope:
+        return {con.STATUS: EVENT.UNAUTHORIZED}
+    else:
+        if Storer.webhook_exists(envelope[con.NORM_KEY_DELIVERY_ID]): return {con.STATUS: EVENT.OK}
+        try:
+            Storer.save_webhook(envelope)
+            return {con.STATUS: EVENT.OK}
+        except SQLAlchemyError: return {con.STATUS: EVENT.ERROR_STORAGE}
