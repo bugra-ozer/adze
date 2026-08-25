@@ -38,3 +38,33 @@ The service is built on a modern Python stack, operating as a lightweight Flask 
 | Authentication  | hmac, hashlib                       |
 | Testing         | pytest, mock, unittest              |
 | Dev-Tools       | Docker, python-dotenv               |
+
+## Getting Started
+
+```bash
+## Requirements
+- Python 3.14+
+- Docker Desktop
+
+## Running
+
+# Clone the repo
+git clone https://github.com/bugra-ozer/adze
+cd adze
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set environment variables
+cp .env.example .env  # fill in DATABASE_URL, GITHUB_WEBHOOK_SECRET, POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB
+
+# Start PostgreSQL
+docker-compose up -d
+
+# Run the app
+python main.py
+```
+
+## Author
+
+**Bugra Ozer** — [github.com/bugra-ozer](https://github.com/bugra-ozer)
