@@ -2,9 +2,10 @@ from flask import Flask, jsonify, request
 from handler import handler
 from common import constants as con
 from dotenv import load_dotenv
-import logging
+import logging, enum
 
 logger=logging.getLogger(__name__)
+EVENT=con.EventHandler
 app=Flask(__name__)
 
 @app.route('/', methods=['POST'])
@@ -17,7 +18,7 @@ def webhook_github():
     headers=request.headers
     body_bytes=request.get_data()
     envelope=handler.github_event(body_bytes, headers)
-    if envelope[con.STATUS]==con.INFO_OK:
+    if envelope[con.STATUS]==EVENT.OK.value:
         return jsonify(envelope), 200
     else:
         return jsonify(con.ERROR_INVALID_CREDENTIALS), 401

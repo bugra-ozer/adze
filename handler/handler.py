@@ -12,8 +12,8 @@ def github_event(body_bytes, headers):
     if not envelope:
         return {con.STATUS: EVENT.UNAUTHORIZED}
     else:
-        if Storer.webhook_exists(envelope[con.NORM_KEY_DELIVERY_ID]): return {con.STATUS: EVENT.OK}
+        if Storer.webhook_exists(envelope[con.NORM_KEY_DELIVERY_ID]): return {con.STATUS: EVENT.OK.value}
         try:
             Storer.save_webhook(envelope)
-            return {con.STATUS: EVENT.OK}
+            return {con.STATUS: EVENT.OK.value}
         except SQLAlchemyError: return {con.STATUS: EVENT.ERROR_STORAGE}
