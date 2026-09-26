@@ -4,22 +4,21 @@ from common import constants as con
 from datetime import datetime, timezone
 import json
 
-def handle_event(body_bytes, headers)-> dict | False:
-    """Verify signature, and return normalized packet."""
+def handle_event(body_bytes, headers) -> dict | con.EventHandler:
+    """Verify signature, and return normalized packet or a specific failure status."""
     msg = body_bytes
     signature_key = con.KEY_GH_SIGNATURE
     prefix = con.PREFIX_GH
     digest_mod = con.DIGEST_MOD_GH
     webhook_secret_key = get_secret(con.WEBHOOK_SECRET_KEY_GH)
-    if signature_verify(webhook_secret_key, signature_key, msg, digest_mod, prefix, headers):
-        return normalize(body_bytes, headers)
-    else:
-        return False
+    if not signature_verify(webhook_secret_key, signature_key, msg, digest_mod, prefix, headers):
+        return con.EventHandler.UNAUTHORIZED
+    return normalize(body_bytes, headers)
 
-def normalize(body_bytes, headers):
+def normalize(body_bytes, headers) -> dict | con.EventHandler:
     """Standardize keys, attach timestamp, and unpack bytes body."""
     try:
-        envelope={
+        envelope = {
         con.NORM_KEY_PROVIDER: con.PROVIDER_GH,
         con.NORM_KEY_EVENT_TYPE: headers.get(con.KEY_GH_EVENT),
         con.NORM_KEY_DELIVERY_ID: headers.get(con.KEY_GH_DELIVERY),
@@ -27,5 +26,5 @@ def normalize(body_bytes, headers):
         con.NORM_KEY_RAW_PAYLOAD: json.loads(body_bytes)
         }
         return envelope
-    except ValueError: return ValueError(con.ERROR_FAILED_PARSE)
-
+    except ValueError:
+        return con.EventHandler.ERROR_PARSE
