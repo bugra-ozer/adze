@@ -10,10 +10,10 @@ EVENT = con.EventHandler
 def _persist(envelope):
     """Shared dedup-check + save path, used by every provider."""
     if Storer.webhook_exists(envelope[con.NORM_KEY_DELIVERY_ID]):
-        return {con.STATUS: EVENT.OK}
+        return {**envelope, con.STATUS: EVENT.OK}
     try:
         Storer.save_webhook(envelope)
-        return {con.STATUS: EVENT.OK}
+        return {**envelope, con.STATUS: EVENT.OK}
     except SQLAlchemyError:
         return {con.STATUS: EVENT.ERROR_STORAGE}
 
