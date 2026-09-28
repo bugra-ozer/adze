@@ -25,3 +25,4 @@ Werkzeug==3.1.8
 logging==0.4.9.6
 pathlib==1.0.1
 psycopg2-binary==2.9.12
+numpy==2.5.2

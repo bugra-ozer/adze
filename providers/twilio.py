@@ -1,5 +1,5 @@
 from common.verifier import hash_compare
-from main import get_secret
+from common.secrets import get_secret
 from common import constants as con
 from datetime import datetime, timezone
 import hmac, hashlib, base64
